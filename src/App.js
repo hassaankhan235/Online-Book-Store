@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import HomePage from './pages/HomePage'
+import { Route, Switch } from 'react-router-dom'
+import ShopPage from './pages/ShopPage'
+import Header from './components/header/Header'
+import SignInSignUp from './pages/SignInSignUp'
 
 function App() {
+  
+  // const churpage = () => {
+  //   return(
+  //   <div>
+  //   Hassaan Greater than any chay
+  //   </div>
+  //   )
+  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+   <Header />
+   <Switch>
+    <Route exact path='/' component= { HomePage } />
+    <Route exact path='/history' component={ ShopPage } />
+    <Route exact path='/signIn' component={SignInSignUp} />
+   </Switch>
+   </div>
   );
 }
 
