@@ -6,32 +6,46 @@ form{
     padding-left: 15px;
     border: none;
     border-bottom: 2px solid black;
-    width: 30%;
+    width: 60%;
 }
-#em:focus + .floating, #pd:focus + .floating{
+/* #em:focus + .floating, #pd:focus + .floating{
+    translate: 0.5;
     position: relative;
-    left: 30%;
-}
+    left: 62%;
+} */
 #pd{
     padding-left: 15px;
     border: none;
     border-bottom: 2px solid black;
-    width: 30%;
+    width: 60%;
 }
 
 .frm-group{
     display: flex;
     flex-direction: column;
-    translate: 0.5;
-}
-.floating{
-    color: rgb(93, 92, 92);
-    font-size: large;
-    position: relative;
-    left: 10px;
-    top: -20px;
-    transition: all 1s ease;
 }
 .submit{
-    width:100px;
+    width:150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.google-btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.submit:hover, .google-btn:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+.buttons{
+    display: inline-flex;
+    justify-content: flex-start;
+    margin-top: 60px ;
+    margin-bottom: 120px;
 }

@@ -1,0 +1,25 @@
+.resp_flex{
+    display: flex;
+}
+.flex_col{
+    flex-direction: column;
+}
+.border-bottom{
+    padding:0 10px;
+    border: 0em;
+    border-bottom: 2px solid black;
+}
+.width-60{
+    width: 60%;
+}
+#Name:focus + .flowing, #email:focus + .flowing, #password:focus + .flowing{
+    translate: 0.5;
+    position: relative;
+    right: 0%;
+}
+/* .flowing:not(:placeholder-shown){
+    position: relative;
+    right: 60%;
+    font-size: large;
+    transition: all 1s ease;
+} */

@@ -2,14 +2,14 @@ import React from 'react'
 import './BookContainer.css'
 
 const BookContainer = ({title,price,urlImg,imgRef}) => {
-    const addcart = (imgRef) => {
-        console.log('IMG',imgRef)
-    }
+    // const addcart = (imgRef) => {
+    //     console.log('IMG',imgRef)
+    // }
 
     return(
     <div className='bk-container'>
         <div style={{
-            backgroundImage: 'url(' + `${urlImg}` + ')'
+            backgroundImage: `url( ${urlImg} )`
         }} className='bk-pic'>
         </div>        
         <div className='bk-detail'>

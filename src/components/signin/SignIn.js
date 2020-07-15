@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './SignIn.css'
+import {signInWithGoogle} from '../../firebase/firebase.utils'
+import { auth } from '../../firebase/firebase.utils'
 
 class SignIn extends Component{
     constructor(props){
@@ -9,9 +11,16 @@ class SignIn extends Component{
             password : ''
         }
     }
-    handleSubmit = event => {
-        event.prevenDefault()
-        this.setState({email:'', password: ''})
+    handleSubmit = async event => {
+        event.preventDefault()
+        const {email, password} = this.state
+        try{
+           await auth.signInWithEmailAndPassword(email, password)
+           this.setState({email:'', password: ''})
+        }
+        catch(error){
+            console.log(error)
+        }
     }
 
     handleChange = event => {
@@ -30,20 +39,24 @@ class SignIn extends Component{
                 onChange = {this.handleChange}
                 type='email'
                 name='email' 
+                placeholder="Email"
                 id ='em'
                 value={this.state.email} required />
-                <label htmlFor='em' className='floating'>Email</label>
+              
             </div>
-            <div className='frm-group'>
+            <div className='frm-group mt-6'>
                 <input 
                 onChange = {this.handleChange}
                 type='password' 
                 name='password' 
                 id= 'pd'
+                placeholder="Password"
                 value={this.state.password} required />
-                <label htmlFor='pd' className='floating'>Password</label>
-                
-                <input type='submit' value='Submit' className='submit' />
+              
+                <div className='buttons'>
+                    <input type='submit' value='Submit' className='submit' />
+                    <button className='google-btn' onClick= {signInWithGoogle} > Sign In With Google</button>
+                </div>
             </div>
                 </form>
             </div>

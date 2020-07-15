@@ -1,0 +1,12 @@
+.sign_comp{
+    margin: 0 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media only Screen and (max-width: 750px){
+    .sign_comp{
+        margin: 0 15px;
+        display: flex;
+        flex-direction: column;
+    }
+}

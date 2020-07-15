@@ -4,7 +4,7 @@ import {withRouter} from 'react-router-dom'
 
 const Category = ({title,urlImage,history,linkUrl,match}) => (
     <div style={{
-        backgroundImage: 'url(' + `${urlImage}` + ')'
+        backgroundImage: `url(${urlImage} )`
      }} 
      className= 'card'>
     <div className="category" onClick={()=> history.push(`${match.url}${linkUrl}`,
