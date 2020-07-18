@@ -1,0 +1,23 @@
+.drop-down{
+    position: absolute;
+    display: flex;
+    width: 240px;
+    height: 340px;
+    top: 70px;
+    right: 4px;
+    background-color: #333;
+    border: 2px solid wheat;
+    z-index: 5;
+}
+button{
+    position: absolute;
+    border-radius: 10px ; 
+    border: 2px solid #D2D2A8;
+    width: 120px;
+    height: 30px;
+    margin-left: 60px;
+    bottom: 5px;
+    cursor: pointer;
+    background-color: white;
+
+}
