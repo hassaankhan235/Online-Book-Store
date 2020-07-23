@@ -6,7 +6,8 @@ html, body, #root{
     margin: 0 0px 10px 0px;
     color: cornsilk;
    display: flex;
-   background-color: #333;
+   background-color: teal;
+   align-items: center;
 }
 
 .site-name{
@@ -20,6 +21,7 @@ html, body, #root{
 @media only screen and (max-width: 600px){
     .header-container{
         display: flex;
+        align-items: center;
      }
      .site-name{
          width: 45%;
@@ -35,14 +37,12 @@ html, body, #root{
           font-size: small;
      }
      li{
-         text-align: center;
          max-width: 80px;
      }
      li:hover{
          max-width: 80px;
      }
      .sign_in_out_btn{
-         text-align: center;
          color: green;
          max-width: 80px;
      }
@@ -67,14 +67,13 @@ ul {
     /* background-color: #333; */
 }
 li{
-    float: right;
+    border: 1px solid teal;
     padding: 0px 0px;
 }
 li a {
     max-width: 100px;
     height: 25px;
     padding: 0px;
-    margin: 0em;
     display: block;
     color: cornsilk;
     text-align: center;
@@ -83,13 +82,14 @@ li a {
     font-family: 'Fondamento', cursive;
   }
   li:hover  {
-    background-color: #111;
+    border: 1px solid white;
     color: blanchedalmond;
     max-width: 100px;
-    height: 25px;
+    /* height: 25px; */
   }
 .sign_in_out_btn{
     box-sizing: border-box;
+    border: 1px solid teal;
     padding: 4px 0;
     font-family: 'Fondamento', cursive;
     vertical-align: middle;
@@ -103,7 +103,16 @@ li a {
     cursor: pointer;
 }
 .sign_in_out_btn:hover{
-    background-color: #111;
+    border: 1px solid white;
     max-width: 120px;
     height: 30px;
+}
+.icon{
+   margin-top: 10px;
+}
+li .icon:hover{
+    background-color: teal;
+}
+.home{
+    margin-right: 10px;
 }

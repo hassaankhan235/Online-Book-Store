@@ -2,19 +2,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
+    border: 1px inset black;
+    box-shadow: 5px 5px 5px #888888;
 }
 .bk-container:hover{
     border: 1px solid red;
 }
 .bk-pic{
     margin: 0 auto;
+    margin-top: 10px;
     align-items: center;
-    width: 80%;
-    height: 80%;
+    width: 99%;
+    height: 85%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 .bk-detail{
     align-items: center;
@@ -23,13 +27,19 @@
     display: inline;
     color: red;
 }
-.cart-icon{
-    background-color: red;
+button.addCartButton{
+    background-color: black;
     margin: 0 auto;
-    align-items: center;
+    /* margin-top: 3px; */
+    margin-bottom: 15px;
     display: block;
     height: 35px;
-    width: 120px;
+    width: 80%;
     color: white;
-    border-radius: 10px;
+    border-radius: 3px;
+}
+button.addCartButton:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
 }

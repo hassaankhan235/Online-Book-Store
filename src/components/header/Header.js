@@ -6,7 +6,7 @@ import './Header.css'
 import { auth } from '../../firebase/firebase.utils'
 import CartIcon from '../ShoppingCart/Cart-icon'
 import CartDropDown from '../ShoppingCart/CartDropDown'
-
+import { selectCartHidden } from '../../redux/selector/cart.selector'
 
 
 const Header = ({user, hidden}) => {
@@ -14,6 +14,7 @@ const Header = ({user, hidden}) => {
         <div className='header-container'>
             <h1 className='site-name'> BOOK STORE</h1>
             <ul className='left'>
+            <li className='home'><Link to='/'> HOME </Link></li>
 
             {user ?  
                 (<div className='sign_in_out_btn' onClick={()=> auth.signOut()}> 
@@ -25,7 +26,7 @@ const Header = ({user, hidden}) => {
                      }
                      
             <li> <a href ='#'> ABOUT </a> </li>
-            <li><CartIcon /> </li>
+            <li className='.icon'> <CartIcon /></li>
             </ul>
             {
                 hidden ? null : <CartDropDown />
@@ -34,9 +35,9 @@ const Header = ({user, hidden}) => {
     )
 }
 
-const mapStateToProps = ({user:{user}, cart: { hidden }}) => ({
-        user,
-        hidden
+const mapStateToProps = (state) => ({
+        user : state.user,
+        hidden : selectCartHidden(state)
 })
 
 export default connect(mapStateToProps)(Header)

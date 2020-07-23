@@ -56,6 +56,6 @@ class Container extends Component{
             } 
             </div>
         )
-    }
+    } 
 }
 export default Container

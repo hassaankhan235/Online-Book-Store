@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+import { Route, Switch, Redirect} from 'react-router-dom'
+import { connect } from 'react-redux';
+
 import './App.css';
 import HomePage from './pages/HomePage'
-import { Route, Switch, Redirect} from 'react-router-dom'
 import ShopPage from './pages/ShopPage'
 import Header from './components/header/Header'
 import SignInSignUp from './pages/SignInSignUp'
 import {auth, createUserProfileDocument} from './firebase/firebase.utils'
-import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/userActions'
+import Checkout from './pages/checkout';
 
 
 class App extends Component {
@@ -45,7 +47,8 @@ class App extends Component {
     <Route exact path='/' component= { HomePage } />
     <Route exact path='/history' component={ ShopPage } />
     <Route exact path='/signIn' render={()=>this.props.user ? <Redirect to='/'/> : <SignInSignUp />} />
-   </Switch>
+    <Route exact path='/checkout' component={ Checkout } />
+    </Switch>
    </div>
   );
 }

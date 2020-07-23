@@ -1,7 +1,9 @@
 import React,{ Component } from 'react';
 import axios from 'axios';
+
 import BookContainer from '../components/container/BookContainer'
 import './ShopPage.css'
+
 
 
 
@@ -12,11 +14,11 @@ state = {
     25,22,22,30,30,30,30,30,25,25,25,20,20]
 }
 
-imgRef = React.createRef();
 
-componentDidMount(){
-    this.btnclick()
+componentDidMount = async () => {
+    await this.btnclick()
 }
+
 
 btnclick = async() => {
     console.log('SHOP PAGE')
@@ -29,14 +31,16 @@ render() {
         {this.state.books.map((book,index) => {
             return(
                 <BookContainer 
+                key   = {book.etag}
+                id    = {book.id}
                 urlImg = {book.volumeInfo.imageLinks.thumbnail}
                 title = {book.volumeInfo.title}
-                price = {this.state.rates[index]} 
-                ref   = {this.imgRef} />
+                price = {this.state.rates[index]} />
             ) 
         })}
         </div>
     )
 }
 }
-export default ShopPage;
+
+export default ShopPage ;

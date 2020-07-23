@@ -1,22 +1,27 @@
 .drop-down{
     position: absolute;
     display: flex;
+    flex-direction: column;
     width: 240px;
     height: 340px;
     top: 70px;
     right: 4px;
-    background-color: #333;
+    background-color: white;
     border: 2px solid wheat;
     z-index: 5;
+    overflow: auto;
+}
+.items{
+    margin-top: 15px;
 }
 button{
-    position: absolute;
-    border-radius: 10px ; 
+    height: 20%;
+    border-radius: 2px ; 
     border: 2px solid #D2D2A8;
     width: 120px;
     height: 30px;
-    margin-left: 60px;
-    bottom: 5px;
+    margin: 20px 60px 5px 60px;
+    margin-top: auto;
     cursor: pointer;
     background-color: white;
 

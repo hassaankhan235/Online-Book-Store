@@ -7,6 +7,7 @@
   justify-content: center;
   cursor: pointer;
   background-color: teal;
+  margin-left: 10px;
 }
 
 .shopping-icon {
@@ -16,7 +17,7 @@
 
   .item-count {
     position: absolute;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
-    bottom: 12px;
+    bottom: 5px;
   }
