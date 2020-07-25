@@ -10,7 +10,7 @@ class BookContainer extends Component {
   
     prepareDispatch = () => {
         const item = {
-            title : this.props.title.substr(0,40),
+            title : this.props.title,
             price : this.props.price,
             urlImg: this.props.urlImg,
             id   : this.props.id

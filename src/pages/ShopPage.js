@@ -4,9 +4,6 @@ import axios from 'axios';
 import BookContainer from '../components/container/BookContainer'
 import './ShopPage.css'
 
-
-
-
 class ShopPage extends Component {
 state = {
     books : [],

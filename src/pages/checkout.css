@@ -1,0 +1,39 @@
+.chkout{
+    margin: 10vh auto;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.chkout_header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    border-bottom: 1px solid black;
+}
+.header{
+    width: 22%;
+}
+.remove{
+    width: 12%;
+    
+}
+.total{
+    margin-top: 10px;
+    margin-left: auto;
+    text-transform: uppercase;
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .chkout{
+        width: 98%;
+        font-size: small;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .chkout{
+        width: 98%;
+        font-size: x-small;
+    }
+}

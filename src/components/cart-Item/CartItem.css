@@ -1,0 +1,26 @@
+.checkoutitems{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    box-sizing: border-box;
+}
+.image{
+    width: 100px;
+    height:  150px;
+    padding: 0em;
+    margin: 0em;
+}
+.chkoutitemdetails{
+    width: 22%;
+    text-align: left;
+}
+.remove{
+    width: 12%;
+    text-align: center;
+}
+.desc{
+    padding-left: 20px;
+}
+.qty{
+    padding-left: 30px;
+}

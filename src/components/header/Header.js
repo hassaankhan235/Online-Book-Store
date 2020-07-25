@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import {connect} from 'react-redux'
 
 import './Header.css'
@@ -36,7 +36,7 @@ const Header = ({user, hidden}) => {
 }
 
 const mapStateToProps = (state) => ({
-        user : state.user,
+        user : state.user.user,
         hidden : selectCartHidden(state)
 })
 

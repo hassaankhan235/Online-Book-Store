@@ -5,8 +5,10 @@ import './CartDropDown.css'
 import '../cart-Item/cart-Item'
 import CartItem from '../cart-Item/cart-Item'
 import { selectcartItem } from '../../redux/selector/cart.selector'
+import { withRouter } from 'react-router-dom'
+import { ToggleDropDownAction } from '../../redux/CartAction'
 
-const CartDropDown = ({cartItem}) => {
+const CartDropDown = ({cartItem, history, dispatch}) => {
     return(
         <div className='drop-down'>
              <div className='items' />
@@ -18,14 +20,17 @@ const CartDropDown = ({cartItem}) => {
                     )
                  }) 
              }
-             <button> CHECKOUT </button> 
+             <button onClick={()=> {
+                dispatch(ToggleDropDownAction())
+                history.push('/checkout')}}>
+               CHECKOUT </button> 
         </div>
     )
 }
-
+ 
 const mapStateToProps = (state) => ({
     cartItem : selectcartItem(state)
 })
 
-export default connect(mapStateToProps)(CartDropDown);
+export default withRouter( connect(mapStateToProps)( CartDropDown));
 
