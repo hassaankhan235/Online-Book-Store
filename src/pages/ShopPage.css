@@ -8,3 +8,14 @@
     margin-right: 90px;
     margin-top: 50px;
 }
+h1{
+    display: block;
+}
+.shoppageHeading{
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: crimson;
+}
+.shoppageTop{
+    text-align: center;
+}

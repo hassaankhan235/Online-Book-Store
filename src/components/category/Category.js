@@ -8,7 +8,7 @@ const Category = ({title,urlImage,history,linkUrl,match}) => (
      }} 
      className= 'card'>
     <div className="category" onClick={()=> history.push(`${match.url}${linkUrl}`,
-        {search: `?q=${linkUrl}`}
+        {search: `?q=${linkUrl}` , collection: `${title}`}
         )}>
     <h1 className="title">{title}</h1>
     <span className="subtitle"> SHOP NOW</span>

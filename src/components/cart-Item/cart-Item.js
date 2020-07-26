@@ -13,4 +13,6 @@ const CartItem = ({item: {urlImg, price, title, quantity}}) => (
       </div>
     </div>
 )
+
+
 export default CartItem

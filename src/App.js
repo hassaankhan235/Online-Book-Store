@@ -45,9 +45,15 @@ class App extends Component {
    <Header />
    <Switch>
     <Route exact path='/' component= { HomePage } />
-    <Route exact path='/history' component={ ShopPage } />
+    <Route exact path='/history'   component={ ShopPage } />
+    <Route exact path='/politics'  component={ ShopPage } />
+    <Route exact path='/politics'  component={ ShopPage } />
+    <Route exact path='/classics'  component={ ShopPage } />
+    <Route exact path='/childeren' component={ ShopPage } />
+    <Route exact path='/education' component={ ShopPage } />
+    <Route exact path='/biography' component={ ShopPage } />
     <Route exact path='/signIn' render={()=>this.props.user ? <Redirect to='/' /> : <SignInSignUp />} />
-    <Route exact path='/checkout' component={ Checkout } />
+    <Route exact path='/checkout'  component={ Checkout } />
    </Switch>
    </div>
   );

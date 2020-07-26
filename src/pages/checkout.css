@@ -10,6 +10,7 @@
     justify-content: space-between;
     margin-left: 5px;
     border-bottom: 1px solid black;
+    font-weight: 600;
 }
 .header{
     width: 22%;
@@ -23,8 +24,14 @@
     margin-left: auto;
     text-transform: uppercase;
     display: block;
+    font-size: xx-large;
 }
-
+.empty{
+    margin-top: 50px;
+    text-align: center;
+    font-size: x-large;
+    color: green;
+}
 @media only screen and (max-width: 600px) {
     .chkout{
         width: 98%;

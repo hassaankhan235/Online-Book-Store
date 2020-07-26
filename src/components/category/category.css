@@ -21,6 +21,7 @@
     border: 2px solid rgb(0, 0, 0);
     background-color: rgba(100, 10, 10,0.8);
     background-position: center;
+    background-size: cover;
     transition: all 500ms;
   }
   .card:hover{

@@ -10,37 +10,37 @@ class Container extends Component{
                 {
                     title : 'HISTORY',
                     id : 1,
-                    urlImage : 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
+                    urlImage : 'https://i.ibb.co/WGLy2jN/history.jpg',
                     linkUrl: 'history'
                 },
                 {
                     title : 'POLITICS',
                     id : 2,
-                    urlImage : "https://i.ibb.co/ypkgK0X/blue-beanie.png",
+                    urlImage : "https://i.ibb.co/3yvs7Kz/politics.jpg",
                     linkUrl: 'politics'
                 },
                 {
-                    title : 'FICTION',
+                    title : 'CLASSICS',
                     id : 3,
-                    urlImage : "https://i.ibb.co/WGLy2jN/history.jpg",
+                    urlImage : "https://i.ibb.co/1vN27qv/Book-in-library-with-old-open-textbook-stack-piles-of-literature-text-archive-on-reading-desk-and-ai.jpg",
                     linkUrl: 'classics'
                 },
                 {
                     title : 'CHILDEREN',
                     id : 4,
-                    urlImage : '../../history.jpg',
+                    urlImage : 'https://i.ibb.co/GsSLgNW/childeren.jpg',
                     linkUrl: 'childeren'
                 },
                 {
                     title : 'EDUCATION',
                     id : 5,
-                    urlImage: '../../history.jpg',
+                    urlImage: 'https://i.ibb.co/RHdPh06/Education.jpg',
                     linkUrl: 'education'
                 },
                 {
                     title : 'BIOGRAPHY',
                     id : 6,
-                    urlImagel: '../../history.jpg',
+                    urlImage: 'https://i.ibb.co/zXJG0dn/biogr.jpg',
                     linkUrl: 'biography'
                 }
             ]

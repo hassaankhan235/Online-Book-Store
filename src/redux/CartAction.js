@@ -13,3 +13,12 @@ export const addItem = (item) => {
         }
     )
 }
+
+export const ClearCartItem = (Item) => {
+    return(
+        {
+            type: 'ClearItemFromCart',
+            payload: Item
+        }
+    )
+}

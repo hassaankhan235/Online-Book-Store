@@ -23,8 +23,12 @@ btnclick = async() => {
     this.setState({books: resp.data.items})
 } 
 render() {
+
     return(
-        <div className='ShopPageContainer'> 
+        <div>
+        <h1 className='shoppageHeading'>
+        {this.props.location.state.collection} BOOKS COLLECTION </h1>
+        <div className='ShopPageContainer'>
         {this.state.books.map((book,index) => {
             return(
                 <BookContainer 
@@ -35,6 +39,7 @@ render() {
                 price = {this.state.rates[index]} />
             ) 
         })}
+        </div>
         </div>
     )
 }
